@@ -1,0 +1,22 @@
+{
+  "name": "diahd2014",
+  "version": "0.0.1",
+  "authors": [
+    "Marco Godínez <markotom@gmail.com>"
+  ],
+  "main": "style.css",
+  "description": "Día de las Humanidades Digitales 2014",
+  "license": "GNU General Public License v2 or later",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "font-awesome": "~4.1.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "diahd2014",
+  "version": "0.0.1",
+  "description": "Día de las Humanidades Digitales 2014",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/filosunam/diahd2014.git"
+  },
+  "main": "Gruntfile.js",
+  "author": "Marco Godínez <markotom@gmail.com>",
+  "license": "GNU General Public License v2 or later",
+  "devDependencies": {
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.11.0"
+  }
+}
