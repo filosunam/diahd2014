@@ -44,7 +44,13 @@
       <!-- Sitename -->
       <div class="pull-left">
         <a href="<?php bloginfo('url'); ?>" rel="home">
-          <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo( 'description' ); ?>" title="<?php bloginfo( 'description' ); ?>">
+          <?php
+
+            $dir  = get_template_directory_uri() . '/assets/images';
+            $logo = $dir . '/logo-' . get_bloginfo( 'language' ) . '.png';
+
+          ?>
+          <img src="<?php print $logo ?>" alt="<?php bloginfo( 'description' ); ?>" title="<?php bloginfo( 'description' ); ?>">
         </a>
       </div>
 
