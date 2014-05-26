@@ -109,7 +109,15 @@
       <div class="jumbotron jumbotron-lead jumbotron-default">
         <div class="container">
           <p class="text-center">
-            <?php echo $lead; ?>
+            <?php
+
+              if ( function_exists( 'icl_translate' ) ) {
+                echo icl_translate( 'diahd2014', 'featured_content_lead', $lead );
+              } else {
+                echo $lead;
+              }
+
+            ?>
           </p>
         </div>
       </div>
