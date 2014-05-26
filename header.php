@@ -109,15 +109,7 @@
       <div class="jumbotron jumbotron-lead jumbotron-default">
         <div class="container">
           <p class="text-center">
-            <?php
-
-              if ( function_exists( 'icl_translate' ) ) {
-                echo icl_translate( 'Theme Mod', 'featured_content_lead', $lead );
-              } else {
-                echo $lead;
-              }
-
-            ?>
+            <?php echo $lead; ?>
           </p>
         </div>
       </div>
