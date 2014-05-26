@@ -56,6 +56,9 @@
 
       <!-- Primary Nav -->
       <div class="pull-right">
+        <div class="pull-left">
+          <?php do_action('icl_language_selector'); ?>
+        </div>
         <p class="text-right">
           <?php if ( ! is_user_logged_in()  ) : ?>
             <a href="<?php echo wp_login_url(); ?>" class="btn btn-xs btn-success">
