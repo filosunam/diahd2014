@@ -112,7 +112,7 @@
             <?php
 
               if ( function_exists( 'icl_translate' ) ) {
-                echo icl_translate( 'Theme Mod', 'callout_text', $lead );
+                echo icl_translate( 'Theme Mod', 'featured_content_lead', $lead );
               } else {
                 echo $lead;
               }
