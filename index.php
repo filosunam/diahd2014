@@ -67,14 +67,14 @@
 <!-- Last active users -->
 <div class="jumbotron jumbotron-default">
   <div class="container">
-    <h2>Últimos usuarios activos</h2>
+    <h2><?php _e('Últimos usuarios activos', 'diahd2014'); ?></h2>
     <?php diahd2014_registered_members(); ?>
   </div>
 </div>
 
 <!-- Last active groups -->
 <div class="container">
-  <h2>Últimos grupos activos</h2>
+  <h2><?php _e('Últimos grupos activos', 'diahd2014'); ?></h2>
   <?php diahd2014_registered_groups(); ?>
 </div>
 
