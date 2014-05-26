@@ -112,7 +112,7 @@
             <?php
 
               if ( function_exists( 'icl_translate' ) ) {
-                echo icl_translate( 'diahd2014', 'featured_content_lead', $lead );
+                echo icl_translate( 'Theme Mod', 'callout_text', $lead );
               } else {
                 echo $lead;
               }
