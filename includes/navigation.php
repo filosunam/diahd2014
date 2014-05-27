@@ -5,9 +5,9 @@
     wp_nav_menu(array(
       'theme_location'  => 'primary',
       'container'       => false,
-      'depth'           => 1,
+      'depth'           => 2,
       'items_wrap'      => '<ul class="nav nav-pills">%3$s</ul>',
-      'fallback_cb'     => '__return_false'
+      'fallback_cb'     => 'diahd2014_nav_menu_args'
     ));
   }
 
