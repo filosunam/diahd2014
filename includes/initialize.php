@@ -44,7 +44,7 @@
       // Register bootstrap scripts
       wp_register_script( 'bootstrap', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), false, true );
       // Register main scripts
-      wp_register_script( 'diahd2014_script', sprintf( $asset, 'main', 'js' ), array( 'jquery', 'bootstrap' ), false, true );
+      wp_register_script( 'diahd2014_script', sprintf( $asset, 'main.min', 'js' ), array( 'jquery', 'bootstrap' ), false, true );
 
       // Enqueue bootstrap scripts
       wp_enqueue_script( 'bootstrap' );

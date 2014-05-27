@@ -8,6 +8,17 @@ module.exports = function (grunt) {
   // Config
   grunt.initConfig({
 
+    // Uglify javascript files
+    uglify: {
+      production: {
+        files: {
+          'built/js/main.min.js': [
+            'assets/scripts/main.js'
+          ]
+        }
+      }
+    },
+
     // Compile less files
     less: {
       development: {
@@ -44,7 +55,7 @@ module.exports = function (grunt) {
   });
 
   // Build Task
-  grunt.registerTask('build', [ 'less:production' ]);
+  grunt.registerTask('build', [ 'less:production', 'uglify:production' ]);
 
   // Default task
   grunt.registerTask('default', 'build');
