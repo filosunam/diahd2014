@@ -72,10 +72,12 @@
   </div>
 </div>
 
+<?php if ( function_exists( 'bp_has_groups' ) ) : ?>
 <!-- Last active groups -->
 <div class="container">
   <h2><?php _e('Últimos grupos activos', 'diahd2014'); ?></h2>
   <?php diahd2014_registered_groups(); ?>
 </div>
+<?php endif; ?>
 
 <?php get_footer(); ?>
