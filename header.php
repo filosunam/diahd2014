@@ -107,14 +107,25 @@
     </div>
 
     <?php if ( is_home() ) : ?>
-      <?php if ( $lead = get_theme_mod( 'featured_content_lead' ) ) : ?>
-      <!-- Lead -->
       <div class="jumbotron jumbotron-lead jumbotron-default">
         <div class="container">
           <p class="text-center">
-            <?php echo $lead; ?>
+            <?php if ( get_bloginfo( 'language' ) === 'pt-PT' ) : ?>
+              Um dia na vida das <strong>Humanidades Digitais</strong> (Dia HD)
+              é um projecto colectivo de publicação digital aberta, que convida
+              investigadores de todo o mundo interessados nas Humanidades
+              Digitais (principalmente os que falem ou trabalhem em espanhol ou
+              português) para que documentem através de textos e imagens as
+              actividades que desenvolvem.
+            <?php else : ?>
+              Un día en la vida de las <strong>Humanidades Digitales</strong>
+              (Día HD) es un proyecto de publicación digital común abierta, que
+              convoca a investigadores de todo el mundo interesados ​en las
+              Humanidades Digitales (principalmente los que hablen o trabajen en
+              español o portugués) para que documenten con texto e imagen las
+              actividades que desarrollan.
+            <?php endif; ?>
           </p>
         </div>
       </div>
-      <?php endif; ?>
     <?php endif; ?>
