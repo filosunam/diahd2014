@@ -29,16 +29,6 @@
             <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-hdh.png" alt="" />
           </a>
         </li>
-        <li class="fcsh">
-          <a href="http://www.fcsh.unl.pt" rel="external nofollow">
-            <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-fcsh.png" alt="" />
-          </a>
-        </li>
-        <li class="usp">
-          <a href="http://www.humanidadesdigitales.net" rel="external nofollow">
-            <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-usp.png" alt="" />
-          </a>
-        </li>
       </ul>
     </div>
   </div>
