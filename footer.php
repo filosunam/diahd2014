@@ -29,6 +29,16 @@
             <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-hdh.png" alt="" />
           </a>
         </li>
+        <li class="aahd">
+          <a href="http://aahd.com.ar" rel="external nofollow">
+            <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-aahd.png" alt="" />
+          </a>
+        </li>
+        <li class="ahdig">
+          <a href="http://ahdig.org" rel="external nofollow">
+            <img src="<?php print get_template_directory_uri(); ?>/assets/images/logo-ahdig.png" alt="" />
+          </a>
+        </li>
       </ul>
     </div>
   </div>
