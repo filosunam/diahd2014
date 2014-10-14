@@ -18,8 +18,9 @@
     // Add sidebars
     add_action( 'widgets_init', 'diahd2014_register_sidebars' );
 
-    // Flush rewrite rules for custom post types
+    // Flush rewrite rules
     add_action( 'after_switch_theme', 'diahd2014_flush_rewrite_rules' );
+    add_action( 'wpmu_new_blog', 'diahd2014_wpmu_new_blog' );
 
     // Add support to post thumbnails
     add_theme_support( 'post-thumbnails' );
@@ -93,5 +94,13 @@
   function diahd2014_flush_rewrite_rules() {
     flush_rewrite_rules();
   }
+
+  // Hook for flush rewrite rules to Wordpress Multisites
+  function diahd2014_wpmu_new_blog( $blog_id ) {
+    switch_to_blog( $blog_id );
+    flush_rewrite_rules();
+    restore_current_blog();
+  }
+
 
 ?>
